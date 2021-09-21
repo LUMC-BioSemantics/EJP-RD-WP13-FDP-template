@@ -25,11 +25,11 @@ Language of the dataset. The two letter code of the language can be obtained fro
 
 `Optional` `Two letter language code`
 #### License
-License of the resource. For example, https://creativecommons.org/licenses/by/4.0/deed.en
+License of the resource. For example, https://creativecommons.org/licenses/by/4.0/deed.en. The license gives official permission to use the resource.
 
 `Optional` `Must start with "http://" or "https://"`
 #### ContactPoint
-ContactPoint
+Contact information for the resource. This can be a URL with contact information, or an email address.
 
 `Optional` `Must start with "http://", "https://" or "mailto:"`
 #### LandingPage
@@ -37,16 +37,16 @@ Home page of the dataset
 
 `Optional` `Must start with "http://" or "https://"`
 #### Keywords
-Keyword(s) related to the dataset with the language tag, separated by comma's (,)
+Keyword(s) related to the dataset with the language tag, separated by comma's (,).
 
 `Optional`
 #### Themes
-List of concepts that describe the dataset, separated by comma's (,)
+List of concepts that describe the dataset, separated by comma's (,).
 
 `Required` `each theme must start with "http://" or "https://"` `Themes should be separated with comma's`
 
 ## Step 3: Distribution sheet
-The second sheet of the template contains metadata of the distributions
+The second sheet of the template contains metadata of the distributions.
 ### Column explanation
 #### Title
 The name of the dataset with the language tag.
@@ -65,7 +65,7 @@ Language of the dataset. The two letter code of the language can be obtained fro
 
 `Optional` `Two letter language code`
 #### License
-License of the resource. For example, https://creativecommons.org/licenses/by/4.0/deed.en
+License of the resource. For example, https://creativecommons.org/licenses/by/4.0/deed.en. The license gives official permission to use the resource.
 
 `Optional` `Must start with "http://" or "https://"`
 #### AccessURL
@@ -88,7 +88,7 @@ Same as MediaType, but the compression format used. For example: "application/gz
 format
 
 `Optional`
-#### Bytesze
+#### Bytesize
 The size of the distribution in bytes
 
 `Optional` `Must be a positive integer`
