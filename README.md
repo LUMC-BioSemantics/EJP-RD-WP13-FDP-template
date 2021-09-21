@@ -87,11 +87,11 @@ Same as MediaType, but the compression format used. For example: "application/gz
 #### Format
 format
 
-`optional`
+`Optional`
 #### Bytesze
 The size of the distribution in bytes
 
-`optional` `must be a positive integer`
+`Optional` `Must be a positive integer`
 ## Step 4: Export
 ### Set up excel
 In excel, in some localizations, it is necessary to set the decimal separator to "." and the thousands separator to ",". This can be done in the File->Options->Advanced>Editin options menu.
