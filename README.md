@@ -17,13 +17,13 @@ ORCID ID of the Organisation or Person responsible for the dataset. An ORCID ID 
 
 `Required` `Must start with "https://orcid.org/"`
 #### Description
-Description of the dataset with the language tag
+Description of the dataset with the language tag.
 
 `Optional`
 #### Language
-Langugage of the dataset. The two letter code of the language can be obtained from https://id.loc.gov/vocabulary/iso639-1.html, or from the languages sheet in the template.
+Language of the dataset. The two letter code of the language can be obtained from https://id.loc.gov/vocabulary/iso639-1.html, or from the languages sheet in the template.
 
-`two letter language code`
+`Optional` `Two letter language code`
 #### License
 License of the resource. For example, https://creativecommons.org/licenses/by/4.0/deed.en
 
@@ -31,11 +31,11 @@ License of the resource. For example, https://creativecommons.org/licenses/by/4.
 #### ContactPoint
 ContactPoint
 
-`optional` `Must start with "http://", "https://" or "mailto:"`
+`Optional` `Must start with "http://", "https://" or "mailto:"`
 #### LandingPage
 Home page of the dataset
 
-`optional` `Must start with "http://" or "https://"`
+`Optional` `Must start with "http://" or "https://"`
 #### Keywords
 Keyword(s) related to the dataset with the language tag, separated by comma's (,)
 
@@ -49,17 +49,49 @@ List of concepts that describe the dataset, separated by comma's (,)
 The second sheet of the template contains metadata of the distributions
 ### Column explanation
 #### Title
-#### Dataset Title
-#### Description
-#### Language
-#### License
-#### AccessURL
-#### DownloadURL
-#### MediaType
-#### CompressionFormat
-#### Format
-#### Bytesze
+The name of the dataset with the language tag.
 
+`Required`
+#### Dataset Title
+The title of the dataset that is associated with the distribution.
+
+`Required` `Must be the title of a dataset in the datasets sheet`
+#### Description
+Description of the distribution with the language tag.
+
+`Optional`
+#### Language
+Language of the dataset. The two letter code of the language can be obtained from https://id.loc.gov/vocabulary/iso639-1.html, or from the languages sheet in the template.
+
+`Optional` `Two letter language code`
+#### License
+License of the resource. For example, https://creativecommons.org/licenses/by/4.0/deed.en
+
+`Optional` `Must start with "http://" or "https://"`
+#### AccessURL
+A landing page, feed, SPARQL endpoint or other type of resource that gives access to the distribution of the dataset.
+
+`One of AccessURL or DownloadURL is mandatory` `Must start with "http://", "https://" or "ftp://"`
+#### DownloadURL
+A file that contains the distribution of the dataset in a given format
+
+`One of AccessURL or DownloadURL is mandatory` `Must start with "http://", "https://" or "ftp://"`
+#### MediaType
+The media type of the distribution, for example: "application/n-quads". Media types can be found at https://www.iana.org/assignments/media-types/media-types.xhtml, or in the MediaTypes sheet in the template.
+
+`Required` `Must be MediaType from https://www.iana.org/assignments/media-types/media-types.xhtml`
+#### CompressionFormat
+Same as MediaType, but the compression format used. For example: "application/gzip".
+
+`Optional` `Must be MediaType from https://www.iana.org/assignments/media-types/media-types.xhtml`
+#### Format
+format
+
+`optional`
+#### Bytesze
+The size of the distribution in bytes
+
+`optional` `must be a positive integer`
 ## Step 4: Export
 ### Set up excel
 In excel, in some localizations, it is necessary to set the decimal separator to "." and the thousands separator to ",". This can be done in the File->Options->Advanced>Editin options menu.
