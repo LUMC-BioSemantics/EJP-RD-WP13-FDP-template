@@ -1,12 +1,12 @@
 # EJP-RD WP19 FDP template
-This template simplifies the collection of metadata attributes of datasets and their distributions. By exporting csv, and adding this to Github repositories, advantage is taken of the version control and collaboration capabilities of Git and Github.
+This template is an excel file that can be filled with metadata for datasets and their distributions. The csv exports of the template can be uploaded to Github repositories for collaboration and version control. Automation in Github can then automatically use the template to produce RDF that is automatically uploaded to a FAIR Data Point.
 
 ## Step 1: Preparation
 ### Download template
 Download the template.xlsx file from this repository. This template works best with Microsoft Excel, but also works with LibreOffice.
 When creating new metadata, this template can be used immediately. When editing existing metadata, the existing csv files should be pasted into the template.
 ## Step 2: Dataset sheet
-The first sheet of the template contains metadata of the datasets.
+The first sheet of the template contains metadata of the datasets. This is the metadata that describes the dataset itself, with metadata like the author or the themes of the dataset.
 ### Column explanation
 #### Title
 The name of the dataset with the language tag.
@@ -41,12 +41,12 @@ Keyword(s) related to the dataset with the language tag, separated by comma's (,
 
 `Optional`
 #### Themes
-List of concepts that describe the dataset, separated by comma's (,).
+List of concepts that describe the dataset, separated by comma's (,). Relevant ontology concepts can be looked up using a service like https://www.ebi.ac.uk/ols/index.
 
 `Required` `each theme must start with "http://" or "https://"` `Themes should be separated with comma's`
 
 ## Step 3: Distribution sheet
-The second sheet of the template contains metadata of the distributions.
+The second sheet of the template contains metadata of the distributions. This is the metadata that describes the distribution of the dataset. This includes a link to where the dataset is distributed, and the file type of the dataset.
 ### Column explanation
 #### Title
 The name of the dataset with the language tag.
