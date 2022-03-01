@@ -49,13 +49,17 @@ List of concepts that describe the dataset, separated by comma's (,). Relevant o
 The second sheet of the template contains metadata of the distributions. This is the metadata that describes the distribution of the dataset. This includes a link to where the dataset is distributed, and the file type of the dataset.
 ### Column explanation
 #### Title
-The name of the dataset with the language tag.
+The name of the distribution with the language tag.
 
 `Required`
 #### Dataset Title
 The title of the dataset that is associated with the distribution.
 
 `Required` `Must be the title of a dataset in the datasets sheet`
+#### Publisher
+ORCID ID of the Organisation or Person responsible for the distribution. An ORCID ID can be created at https://orcid.org/.
+
+`Required` `Must start with "https://orcid.org/"`
 #### Description
 Description of the distribution with the language tag.
 
