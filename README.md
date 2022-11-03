@@ -1,4 +1,4 @@
-# EJP-RD WP19 FDP template
+# EJP-RD WP13 FDP template
 This template is an excel file that can be filled with metadata for datasets and their distributions. The csv exports of the template can be uploaded to Github repositories for collaboration and version control. Automation in Github can then automatically use the template to produce RDF that is automatically uploaded to a FAIR Data Point.
 
 ## Step 1: Preparation
